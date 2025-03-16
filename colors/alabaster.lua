@@ -31,7 +31,7 @@ if vim.o.background == "dark" then
 	local fg = "#cecece"
 	local punct_fg = "#708b8d"
 	local def_fg = "#71ade7"
-	local const_fg = "#cc8bc9"
+	local const_fg = "#cd974b" -- #cc8bc9
 	local active = "#cd974b"
 	local string_fg = "#95cb82"
 	local darker_fg = "#7d7d7d"
@@ -261,7 +261,7 @@ if vim.o.background == "dark" then
 		["@punctuation.special"] = { fg = punct_fg },
 		["@repeat"] = { fg = ansi.white },
 		["@string"] = { fg = string_fg },
-		["@string.regex"] = { bg = "#1d292b", fg = const_fg },
+		["@string.regex"] = { fg = const_fg },
 		["@string.escape"] = { fg = const_fg },
 		["@symbol"] = {},
 		["@type"] = { fg = ansi.white },
