@@ -35,9 +35,9 @@ local const_fg = "#cd974b" -- #cc8bc9
 local active = "#cd974b"
 local string_fg = "#95cb82"
 local darker_fg = "#7d7d7d"
-local diffadd = "#6abf40"
-local diffdelete = "#d2322d"
-local diffchange = "#ec8013"
+local diffadd = "#95cb82"
+local diffdelete = "#F57A7A"
+local diffchange = "#cd974b"
 local statusline = "#162022"
 --local comment = "#dfdf8e"
 local dim_comment = "#696969"
@@ -77,8 +77,8 @@ theme = {
 	CursorColumn = { bg = "#182325" },
 	CursorLine = { bg = "#182325" },
 	Directory = { fg = ansi.blue },
-	DiffAdd = { bg = "#244032", fg = "#56d364" },
-	DiffDelete = { bg = "#462c32", fg = "#f85149" },
+	DiffAdd = { fg = ansi.green },
+	DiffDelete = { fg = ansi.red },
 	DiffText = { fg = "#341a00", bg = "#fff987" },
 	DiffChange = { bg = "#341a00", fg = "#e3b341" },
 	EndOfBuffer = { fg = "#354c50" },
@@ -383,6 +383,12 @@ theme = {
 	--- asm
 	asmDirective = { fg = dim_comment },
 	nasmLabel = { link = "@AlabasterDefinition" },
+
+	-- NeoTree
+	NeoTreeTitleBar = { fg = ansi.white, bg = "#182325" },
+	NeoTreeGitModified = { fg = ansi.yellow },
+	NeoTreeGitConflict = { fg = ansi.magenta, italic = true },
+	NeoTreeGitUntracked = { fg = ansi.yellow, italic = true },
 }
 for group, hl in pairs(theme) do
 	vim.api.nvim_set_hl(0, group, hl)
