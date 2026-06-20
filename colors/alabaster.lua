@@ -283,6 +283,7 @@ theme = {
 	["@AlabasterPunct"] = { fg = punct_fg },
 	["@AlabasterString"] = { fg = string_fg },
 	["@AlabasterHashbang"] = { fg = dim_comment },
+	["@AlabasterGenericParam"] = { fg = ansi.brightyellow },
 	--- Gitsigns
 	GitSignsAdd = { fg = diffadd },
 	GitSignsChange = { fg = diffchange },
